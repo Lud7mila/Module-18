@@ -19,15 +19,14 @@ from tempfile import template
 from django.contrib import admin
 from django.urls import path
 from task2.views import func_index, ClassIndex
-from task3.views import CookBook, get_recipes, get_info_about
-from django.views.generic import TemplateView
+from task4.views import get_cookbook, get_recipes, get_info_about
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('func/', func_index),
     path("class/", ClassIndex.as_view()),
-    path("cookbook/", CookBook.as_view()),
+    path("cookbook/", get_cookbook),
     path("cookbook/content/", get_recipes),
     path("cookbook/about/", get_info_about),
 ]

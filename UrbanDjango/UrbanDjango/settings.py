@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+from os.path import join
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'task2',
     "task3",
+    "task4",
 ]
 
 MIDDLEWARE = [
@@ -55,7 +57,9 @@ ROOT_URLCONF = 'UrbanDjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates/second_task', BASE_DIR / 'templates/third_task'],
+        'DIRS': [BASE_DIR / 'templates/second_task',
+                 # BASE_DIR / 'templates/third_task',
+                 BASE_DIR / 'templates/fourth_task'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -112,11 +116,11 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (join(BASE_DIR, "static/"), )
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
