@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+{% load static %}
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Рецепты</title>
+	<link rel="stylesheet" href="{% static 'css/stylesheet.css'%}" type="text/css">
+</head>
+<body link="purple" style="background-image: url('/static/images/Sunset2.jpg')">
+	<p class="page-title">Рецепты</p>
+	<ul class="menu-item">
+		<li>Завтрак "Малиновое искушение" <button>Посмотреть рецепт</button></li>
+		<li>Торт "Тыквенное наслаждение" <button>Посмотреть рецепт</button> </li>
+		<li>Суп-пюре "Зимняя радость" <button>Посмотреть рецепт</button> </li>
+	</ul>
+	<button class="button-back" onclick="location.href = '/cookbook/'">Вернуться обратно</button>
+</body>
+</html>

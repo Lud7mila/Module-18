@@ -9,3 +9,4 @@ class ClassIndex(View):
     #template_name = "class_template.html"
     def get(self, request):
         return render(request, "class_template.html")
+

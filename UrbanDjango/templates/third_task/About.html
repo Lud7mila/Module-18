@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+{% load static %}
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Об авторе</title>
+	<link rel="stylesheet" href="{% static 'css/stylesheet.css'%}" type="text/css">
+</head>
+<body text="purple" style="background-image: url('/static/images/PinkBubble2.jpg')">
+	<p class="page-title">Об авторе кулинарной книги</p>
+	<p>Данная книга создана мной: Кучиной Людмилой.</p>
+	<p>Я люблю готовить необычные блюда!</p>
+	<p>Часто я придумываю их сама, и есть огромная потребность сохранять эти рецепты. Иначе я их забываю.</p>
+	<p><img width="70%" src="{% static 'images/Cake.jpg' %}" alt="My image"></p>
+	<button class="button-back" onclick="location.href = '/cookbook/'">Вернуться обратно</button>
+</body>
+</html>
