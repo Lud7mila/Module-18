@@ -1,7 +1,4 @@
-from lib2to3.fixes.fix_input import context
-
 from django.shortcuts import render
-
 
 def get_cookbook(request):
     context = {"page_name": "Кулинарная книга"}

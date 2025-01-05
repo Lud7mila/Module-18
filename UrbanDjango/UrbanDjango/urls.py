@@ -20,6 +20,7 @@ from django.contrib import admin
 from django.urls import path
 from task2.views import func_index, ClassIndex
 from task4.views import get_cookbook, get_recipes, get_info_about
+from task5.views import sign_up_by_django, sign_up_by_html
 
 
 urlpatterns = [
@@ -29,4 +30,6 @@ urlpatterns = [
     path("cookbook/", get_cookbook),
     path("cookbook/content/", get_recipes),
     path("cookbook/about/", get_info_about),
+    path("django_sign_up/", sign_up_by_django),
+    path("", sign_up_by_html),
 ]
